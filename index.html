@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Muchiri | Forms</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Navigation bar starts -->
+        <section id="navbar">
+            <div class="logo">
+                <h1>Muchiri.</h1>
+            </div>
+
+            <ul class="nav-items">
+                <li class="close"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"/></svg></li>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+
+            <div class="button">
+                <button class="btn  loginBtn" id="btnLOG">Login</button>
+                <button class="btn activated signupBtn" id="btnSIGN">Sign Up</button>
+            </div>
+            <div class="hamburger">
+                <div class="menu">
+                    <div class="center"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Navigation bar ends -->
+
+        <!-- sign in starts -->
+        <section id="sign-up">
+            <div class="shift">
+                <p>Have an account? <a href="#" class="loginBtn">Login</a></p>
+                <h1 class="title">Sign Up</h1>
+            </div>
+            <div class="form">
+                <div class="names">
+                    <input type="text" name="first-name" id="firstName" placeholder="First name" required>
+                    <input type="text" name="Last-name" id="lastName" placeholder="Last name" required>
+                </div>
+                <div class="email">
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="password">
+                    <input type="password" name="password" id="password" placeholder="password" required>
+                </div>
+                <div class="this">
+                    <button class="this-btn register">Register</button>
+                </div>
+                <div class="bottom-part">
+                    <div class="remember">
+                        <label for="remember">Remember Me</label>
+                        <input type="checkbox" name="remember" id="remember-me">
+                    </div>
+                    <div class="terms">
+                        <label for="terms-conditions"><a href="#">Terms & Conditions</a></label>
+                        <input type="checkbox" name="terms" id="terms-conditions">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- sign in ends -->
+
+        <!-- sign up starts -->
+        <section id="login">
+            <div class="shift">
+                <p>Don't have an account? <a href="#sign-in" class="signupBtn">Sign Up</a></p>
+                <h1 class="title">Login</h1>
+            </div>
+            <div class="form">
+                <div class="email">
+                    <input type="email" name="email" id="email2" placeholder="Email Address" required>
+                </div>
+                <div class="password">
+                    <input type="password" name="password" id="password2" placeholder="password" required>
+                </div>
+                <div class="this">
+                    <button class="this-btn ingia">Login</button>
+                </div>
+                <div class="bottom-part">
+                    <div class="remember">
+                        <label for="remember">Remember Me</label>
+                        <input type="checkbox" name="remember" id="remember-me">
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot Password</a>
+                    </div>
+            </div>
+        </section>
+        <!-- sign up ends -->
+        
+        <script src="Script.js"></script>
+    </body>
+</html>

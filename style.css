@@ -1,0 +1,395 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+body{
+    min-height: 100vh;
+    background: url(pexels-kevin-ku-577585.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    backdrop-filter: blur(3px);
+}
+#navbar{
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #000000cc , transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 25px;
+    color: #fff;
+}
+.nav-items{
+    display: flex;
+}
+.nav-items li{
+    margin: 0 30px;
+}
+.nav-items li a{
+    padding: 0;
+    padding-bottom: 10px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #fff;
+}
+.nav-items li a.active,
+.nav-items li a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+.btn{
+    width: 8em;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 20px;
+    color: #000;
+    background: #929292d5;
+    transition: all .2s;
+}
+
+.btn.activated{
+    background: #fff;
+}
+.btn:hover{
+    background: #ffffff9c;
+}
+.hamburger{
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #929292d5;
+    display: none;
+    justify-content: center;
+    align-items: center;
+} 
+.menu{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    display: flex;
+    justify-content: center !important; 
+    align-items: center !important;
+}
+.menu::after{
+    content: " ";
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+    background: #fff;
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+    background: #fff;
+}
+.menu::before{
+    content: " ";
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+    background: #fff;
+}
+#login{
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    width: 40%;
+    height: 65vh;
+    padding: 20px;
+    border-radius: 30px;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    transition: all .3s;
+}
+#sign-up{
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    width: 40%;
+    height: 65vh;
+    padding: 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(20px)!important;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.shift{
+    padding: 20px 10px;
+}
+.shift p{
+    padding: 10px 20px;
+}
+.shift p a{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.shift h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.names{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#firstName, #lastName{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #ffffff42;
+    backdrop-filter: blur(20px);
+    border: none;
+    height: 40px;
+    width: 20em !important;
+}
+
+#email, #password{
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #ffffff42;
+    backdrop-filter: blur(20px);
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+    width: 15em;
+}
+
+#email, #email2, #password2 , #password{
+    width: 100% !important;
+}
+#email, #email2, #password2 , #password,#firstName, #lastName{
+    transition: all .3s;
+}
+#email:hover, #email2:hover, #password2:hover, #password:hover ,#firstName:hover , #lastName:hover{
+    background: #ece2e29f;
+}
+input::placeholder{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+}
+#email:focus, #email2:focus, #password2:focus, #password:focus ,#firstName:focus , #lastName:focus{
+    background: #888888d3;
+}
+.form{
+    width: 100%;
+}
+.this, .email, .password {
+    width: 100%;
+    margin: 10px 0;
+    height: 40px;
+}
+
+.this-btn{
+    width: 100%;
+    height: 100%;
+    font-weight: 1000;
+    border-radius: 30px;
+    border: none;
+    background: #ffffff42;
+    backdrop-filter: blur(20px);
+    transition: all .2s;
+}
+.this-btn:hover{
+    background: #ffffff80;
+    color: #000;
+}
+.bottom-part{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.remember , .terms{
+    display: flex;
+    flex-direction: row-reverse;
+}
+input[type = "checkbox"]{
+    margin-right: 10px;
+}
+
+.terms label a:hover, .forgot a:hover{
+    text-decoration: underline;
+}
+
+#email2, #password2{
+    width: 20em;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: #ffffff42;
+    backdrop-filter: blur(20px);
+    height: 40px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.close{
+    display: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 1150px) {
+    .btn{
+        display: none;
+    }
+    #navbar{
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .nav-items li a{
+        font-size: 15px;
+    }
+    .shift p{
+        padding: 5px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .hamburger{
+        display: flex;
+    }
+    
+    .shift{
+        padding: 5px;
+    }
+    .shift h1{
+        font-size: 25px;
+    }
+    .names{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #firstName, #lastName{
+        margin: 10px 0;
+        margin-bottom: 5px;
+        height: 40px !important;
+        width: 100% !important;
+    }
+    .close{
+        display: block;
+        background: #b7d4ff80;
+        border-radius: 50%;
+    }
+    .nav-items{
+        background: #000000b7;
+        position: absolute;
+        top: -1000%;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1;
+        transition: all .3s;
+    }
+    .nav-items.clicked{
+        top: 0;
+    }
+    .nav-items li{
+        padding: 30px;
+    }
+    .nav-items li a{
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+@media (max-width: 780px) {
+    .shift{
+        padding: 0;
+    }
+    .shift p{
+        padding: 0;
+        font-size: 10px;
+    }
+    .shift h1{
+        font-size: 20px;
+    }
+    input::placeholder{
+        font-size: 11px;
+    }
+    label{
+        font-size: 15px;
+    }
+    #email, #email2, #password, #password2,#firstName,#lastName, .this-btn{
+        height: 35px !important;
+    }
+    #sign-up, #login{
+        padding: 10px;
+        height: 40vh;
+    }
+}
+
+
+@media (max-width: 700px) {
+    .terms label a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+    .remember label{
+        font-size: 10px;
+    }
+    .forgot a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 10px;
+    }
+}
+@media (max-width: 450px) {
+    .shift{
+        padding: 0;
+    }
+    .shift p{
+        padding: 0;
+        font-size: 7px;
+    }
+    .shift h1{
+        font-size: 15px;
+    }
+    .terms label{
+        font-size: 13px;
+    }
+}
